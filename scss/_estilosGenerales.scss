@@ -1,0 +1,149 @@
+$color-principal: rgba(149, 52, 184, 1) 55%;
+$color-secundario: rgba(226, 0, 255, 1) 100%;
+$color-complementario: rgba(63, 80, 212, 1) 0%;
+$estilos: (
+  color: white,
+  fuente1: 1.5rem,
+  fuente2: 110px,
+);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.section1 {
+  background-color: #39375b;
+}
+
+.section2 {
+  background-color: #51557e;
+}
+
+.section3 {
+  background-color: #745c97;
+}
+
+header {
+  background: $color-complementario;
+  background: linear-gradient(
+    90deg,
+    $color-complementario,
+    $color-secundario,
+    $color-principal
+  );
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-image: linear-gradient(
+    to right,
+    pink,
+    $color-secundario,
+    $color-principal
+  );
+  background-size: 300% 100%;
+  transition: background-position 0.5s ease-in-out;
+}
+
+.container-fluid {
+  img {
+    width: 300px;
+  }
+}
+
+header:hover {
+  background-position: 100% 0;
+}
+
+.boton {
+  position: relative;
+  border: none;
+  border-radius: 0.25rem;
+  padding: 0.2rem;
+  width: 8rem;
+  height: 2.5rem;
+  font-size: map-get($estilos, fuente);
+  font-weight: bold;
+  cursor: pointer;
+  overflow: hidden;
+  box-shadow: 0.25rem 0.25rem 0.5rem 0.25rem rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.anim-boton::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 0.25rem;
+  background-color: black;
+  transition: width 0.5s ease, left 0.5s ease, right 0.5s ease;
+}
+
+.anim-boton:hover::after {
+  width: 100%;
+}
+
+.to-center::after {
+  left: 50%;
+}
+
+.to-center:hover::after {
+  left: 0%;
+}
+
+.collapse,
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+.nav-link {
+  color: black;
+  font-size: 1.5rem;
+}
+
+nav ul {
+  display: flex;
+  ul {
+    li {
+      a {
+        margin: 0px 15px;
+        text-decoration: none;
+        font-size: map-get($estilos, fuente1);
+      }
+    }
+  }
+}
+
+li {
+  list-style: none;
+}
+
+h1 {
+  text-align: center;
+}
+
+.footer {
+  background: linear-gradient(
+    90deg,
+    $color-complementario,
+    $color-secundario,
+    $color-principal
+  );
+  width: 1250 vw;
+  height: 100 vh;
+  padding: 20px;
+
+  font-size: 35px;
+}
+
+.footer {
+  ul {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+footer i:hover {
+  color: map-get($estilos, color);
+}

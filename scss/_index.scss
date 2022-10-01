@@ -1,0 +1,124 @@
+$color-principal: rgba(149, 52, 184, 1) 55%;
+$color-secundario: rgba(226, 0, 255, 1) 100%;
+$color-complementario: rgba(63, 80, 212, 1) 0%;
+$estilos: (
+  colorfuente: white,
+  fuente1: 1.5rem,
+  fuente2: 110px,
+);
+
+.centrado {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 7rem;
+  color: violet;
+  font-weight: bold;
+}
+
+h2,
+.about {
+  font-size: 42px;
+  text-align: center;
+  background-color: #b4aee8;
+
+  background: rgb(2, 0, 36);
+  background: rgb(63, 80, 212);
+  background: linear-gradient(
+    90deg,
+    $color-complementario,
+    $color-secundario,
+    $color-principal
+  );
+  color: map-get($estilos, colorfuente);
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
+.sell__container {
+  @extend .flex;
+  flex-wrap: wrap;
+}
+
+.sell__container div {
+  @extend .flex;
+  align-items: center;
+  margin: 10px;
+  width: 730px;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: cover;
+}
+.sell__container div:nth-child(1) {
+  background-image: url(../img2/Consoles.jpg);
+}
+.sell__container div:nth-child(2) {
+  background-image: url(../img2/retrp.jpg);
+}
+.sell__container div:nth-child(3) {
+  background-image: url(../img2/Accesories.jpg);
+  width: 200%;
+}
+
+.sell__container {
+  img {
+    width: 730px;
+    height: 400px;
+  }
+  p {
+    font-size: 4rem;
+    color: map-get($estilos, colorfuente);
+  }
+}
+
+.sellortrade {
+  width: 100%;
+  height: 500px;
+}
+
+.gameoftheweek {
+  background-image: url("./Img/gameoftheweek.png");
+  background-repeat: no-repeat;
+  background: linear-gradient(to bottom, rgb(0 0 0 / 0.4), rgb(0 0 0 / 0.4)),
+    url(../Img/gameoftheweek.png);
+  background-size: cover;
+  width: 100%;
+  height: 450px;
+  background-attachment: scroll;
+  background-attachment: fixed;
+  text-align: center;
+  color: white;
+  justify-content: center;
+}
+
+.bg-card {
+  background: linear-gradient(
+    90deg,
+    $color-complementario,
+    $color-secundario,
+    $color-principal
+  );
+}
+
+.texto-card {
+  color: map-get($estilos, colorfuente);
+  font-size: 40px;
+}
+
+.btn-propio {
+  background-color: palevioletred;
+  color: map-get($estilos, colorfuente);
+  .btn-propio:hover {
+    background-color: white;
+  }
+}
+
+.texto {
+  font-size: 27px;
+  color: map-get($estilos, colorfuente);
+}

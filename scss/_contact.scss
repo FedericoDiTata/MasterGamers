@@ -1,0 +1,38 @@
+$color-principal: rgba(149, 52, 184, 1) 55%;
+$color-secundario: rgba(226, 0, 255, 1) 100%;
+$color-complementario: rgba(63, 80, 212, 1) 0%;
+$estilos: (
+  color: white,
+  fuente1: 1.5rem,
+  fuente2: 110px,
+);
+
+.contactofondo {
+  background-image: url(../Img/contactofondo.jpg);
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+}
+
+.contact__section {
+  background: rgb(2, 0, 36);
+  background: rgb(63, 80, 212);
+  background: linear-gradient(
+    90deg,
+    $color-complementario,
+    $color-secundario,
+    $color-principal
+  );
+  color: map-get($estilos, colorfuente);
+  width: 50%;
+  margin: 20px;
+  padding: 20px;
+}
+
+.contact {
+  color: pink;
+  font-size: 25px;
+  font-weight: bold;
+}

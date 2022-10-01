@@ -1,0 +1,398 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.section1 {
+  background-color: #39375b;
+}
+
+.section2 {
+  background-color: #51557e;
+}
+
+.section3 {
+  background-color: #745c97;
+}
+
+header {
+  background: rgb(63, 80, 212) 0%;
+  background: linear-gradient(90deg, rgb(63, 80, 212) 0%, rgb(226, 0, 255) 100%, rgb(149, 52, 184) 55%);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-image: linear-gradient(to right, pink, rgb(226, 0, 255) 100%, rgb(149, 52, 184) 55%);
+  background-size: 300% 100%;
+  transition: background-position 0.5s ease-in-out;
+}
+
+.container-fluid img {
+  width: 300px;
+}
+
+header:hover {
+  background-position: 100% 0;
+}
+
+.boton {
+  position: relative;
+  border: none;
+  border-radius: 0.25rem;
+  padding: 0.2rem;
+  width: 8rem;
+  height: 2.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  overflow: hidden;
+  box-shadow: 0.25rem 0.25rem 0.5rem 0.25rem rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.anim-boton::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 0.25rem;
+  background-color: black;
+  transition: width 0.5s ease, left 0.5s ease, right 0.5s ease;
+}
+
+.anim-boton:hover::after {
+  width: 100%;
+}
+
+.to-center::after {
+  left: 50%;
+}
+
+.to-center:hover::after {
+  left: 0%;
+}
+
+.collapse,
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+.nav-link {
+  color: black;
+  font-size: 1.5rem;
+}
+
+nav ul {
+  display: flex;
+}
+nav ul ul li a {
+  margin: 0px 15px;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+li {
+  list-style: none;
+}
+
+h1 {
+  text-align: center;
+}
+
+.footer {
+  background: linear-gradient(90deg, rgb(63, 80, 212) 0%, rgb(226, 0, 255) 100%, rgb(149, 52, 184) 55%);
+  width: 1250 vw;
+  height: 100 vh;
+  padding: 20px;
+  font-size: 35px;
+}
+
+.footer ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer i:hover {
+  color: white;
+}
+
+.centrado {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 7rem;
+  color: violet;
+  font-weight: bold;
+}
+
+h2,
+.about {
+  font-size: 42px;
+  text-align: center;
+  background-color: #b4aee8;
+  background: rgb(2, 0, 36);
+  background: rgb(63, 80, 212);
+  background: linear-gradient(90deg, rgb(63, 80, 212) 0%, rgb(226, 0, 255) 100%, rgb(149, 52, 184) 55%);
+  color: white;
+}
+
+.flex, .sell__container div, .sell__container {
+  display: flex;
+  justify-content: center;
+}
+
+.sell__container {
+  flex-wrap: wrap;
+}
+
+.sell__container div {
+  align-items: center;
+  margin: 10px;
+  width: 730px;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: cover;
+}
+
+.sell__container div:nth-child(1) {
+  background-image: url(../img2/Consoles.jpg);
+}
+
+.sell__container div:nth-child(2) {
+  background-image: url(../img2/retrp.jpg);
+}
+
+.sell__container div:nth-child(3) {
+  background-image: url(../img2/Accesories.jpg);
+  width: 200%;
+}
+
+.sell__container img {
+  width: 730px;
+  height: 400px;
+}
+.sell__container p {
+  font-size: 4rem;
+  color: white;
+}
+
+.sellortrade {
+  width: 100%;
+  height: 500px;
+}
+
+.gameoftheweek {
+  background-image: url("./Img/gameoftheweek.png");
+  background-repeat: no-repeat;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../Img/gameoftheweek.png);
+  background-size: cover;
+  width: 100%;
+  height: 450px;
+  background-attachment: scroll;
+  background-attachment: fixed;
+  text-align: center;
+  color: white;
+  justify-content: center;
+}
+
+.bg-card {
+  background: linear-gradient(90deg, rgb(63, 80, 212) 0%, rgb(226, 0, 255) 100%, rgb(149, 52, 184) 55%);
+}
+
+.texto-card {
+  color: white;
+  font-size: 40px;
+}
+
+.btn-propio {
+  background-color: palevioletred;
+  color: white;
+}
+.btn-propio .btn-propio:hover {
+  background-color: white;
+}
+
+.texto {
+  font-size: 27px;
+  color: white;
+}
+
+.consoles__container {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.texto1 {
+  position: absolute;
+  font-size: 110px;
+  color: white;
+  top: 325px;
+  left: 150px;
+}
+
+.texto2 {
+  position: absolute;
+  font-size: 110px;
+  color: white;
+  top: 250px;
+  left: 520px;
+}
+
+.texto3 {
+  position: absolute;
+  font-size: 110px;
+  color: white;
+  top: 400px;
+  left: 600px;
+}
+
+.texto4 {
+  position: absolute;
+  font-size: 110px;
+  color: white;
+  top: 325px;
+  right: 80px;
+}
+
+.texto-sega {
+  position: absolute;
+  font-size: 110px;
+  color: white;
+  top: 300px;
+  left: 135px;
+}
+
+.texto-super {
+  position: absolute;
+  font-size: 110px;
+  color: white;
+  top: 240px;
+  left: 660px;
+}
+
+.texto-nintendo {
+  position: absolute;
+  font-size: 110px;
+  color: white;
+  top: 370px;
+  left: 570px;
+}
+
+.texto-ps1 {
+  position: absolute;
+  font-size: 110px;
+  color: white;
+  top: 325px;
+  right: 110px;
+}
+
+.joystickstandar {
+  text-align: center;
+}
+
+.contactofondo {
+  background-image: url(../Img/contactofondo.jpg);
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+}
+
+.contact__section {
+  background: rgb(2, 0, 36);
+  background: rgb(63, 80, 212);
+  background: linear-gradient(90deg, rgb(63, 80, 212) 0%, rgb(226, 0, 255) 100%, rgb(149, 52, 184) 55%);
+  width: 50%;
+  margin: 20px;
+  padding: 20px;
+}
+
+.contact {
+  color: pink;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 576px) {
+  /* Estilos Generales */
+  header {
+    flex-direction: column;
+    align-items: center;
+    width: 540px;
+  }
+  ul li a {
+    font-size: 15px;
+  }
+  h2 {
+    width: 98%;
+    font-size: 25px;
+  }
+  .footer {
+    width: 91%;
+    font-size: 15px;
+    justify-content: center;
+  }
+  p {
+    font-size: 10px;
+  }
+  /* index */
+  .banner_container img {
+    width: 97%;
+  }
+  .centrado {
+    font-size: 70px;
+  }
+  .texto1,
+.texto2,
+.texto3,
+.texto4 {
+    font-size: 80px;
+  }
+  .texto1 {
+    top: 400px;
+  }
+  .texto2 {
+    top: 835px;
+    left: 200px;
+  }
+  .texto3 {
+    top: 1200px;
+  }
+  .texto4 {
+    top: 1600px;
+  }
+  .gameoftheweek {
+    background-image: url(./Img/gameoftheweekmobile.webp);
+  }
+  /* Accesories */
+  .productos__headphones,
+.productos__mouse {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
+  .contenedor {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  /* Nintendo  y Sony*/
+  .consoles img {
+    margin-top: 10px;
+    width: 100%;
+    height: 350px;
+  }
+  .productos {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+  .contact {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

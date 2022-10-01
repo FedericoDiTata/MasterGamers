@@ -1,0 +1,102 @@
+/* Media Queries */
+
+@media only screen and (max-width: 768px) {
+}
+
+@media only screen and (max-width: 576px) {
+  /* Estilos Generales */
+  header {
+    flex-direction: column;
+    align-items: center;
+    width: 540px;
+  }
+
+  ul li a {
+    font-size: 15px;
+  }
+
+  h2 {
+    width: 98%;
+    font-size: 25px;
+  }
+
+  .footer {
+    width: 91%;
+    font-size: 15px;
+    justify-content: center;
+  }
+
+  p {
+    font-size: 10px;
+  }
+
+  /* index */
+
+  .banner_container img {
+    width: 97%;
+  }
+
+  .centrado {
+    font-size: 70px;
+  }
+
+  .texto1,
+  .texto2,
+  .texto3,
+  .texto4 {
+    font-size: 80px;
+  }
+
+  .texto1 {
+    top: 400px;
+  }
+
+  .texto2 {
+    top: 835px;
+    left: 200px;
+  }
+
+  .texto3 {
+    top: 1200px;
+  }
+
+  .texto4 {
+    top: 1600px;
+  }
+
+  .gameoftheweek {
+    background-image: url(./Img/gameoftheweekmobile.webp);
+  }
+
+  /* Accesories */
+  .productos__headphones,
+  .productos__mouse {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
+
+  .contenedor {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  /* Nintendo  y Sony*/
+  .consoles img {
+    margin-top: 10px;
+    width: 100%;
+    height: 350px;
+  }
+
+  .productos {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .contact {
+    width: 100%;
+  }
+}

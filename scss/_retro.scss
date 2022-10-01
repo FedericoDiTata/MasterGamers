@@ -1,0 +1,44 @@
+$color-principal: rgba(149, 52, 184, 1) 55%;
+$color-secundario: rgba(226, 0, 255, 1) 100%;
+$color-complementario: rgba(63, 80, 212, 1) 0%;
+$estilos: (
+  colorfuente: white,
+  fuente1: 1.5rem,
+  fuente2: 110px,
+);
+
+.texto-sega {
+  position: absolute;
+  font-size: 110px;
+  color: map-get($estilos, colorfuente);
+  top: 300px;
+  left: 135px;
+}
+
+.texto-super {
+  position: absolute;
+  font-size: 110px;
+  color: map-get($estilos, colorfuente);
+  top: 240px;
+  left: 660px;
+}
+
+.texto-nintendo {
+  position: absolute;
+  font-size: 110px;
+  color: map-get($estilos, colorfuente);
+  top: 370px;
+  left: 570px;
+}
+
+.texto-ps1 {
+  position: absolute;
+  font-size: 110px;
+  color: map-get($estilos, colorfuente);
+  top: 325px;
+  right: 110px;
+}
+
+.joystickstandar {
+  text-align: center;
+}

@@ -1,0 +1,46 @@
+$color-principal: rgba(149, 52, 184, 1) 55%;
+$color-secundario: rgba(226, 0, 255, 1) 100%;
+$color-complementario: rgba(63, 80, 212, 1) 0%;
+$estilos: (
+  colorfuente: white,
+  fuente1: 1.5rem,
+  fuente2: 110px,
+);
+@mixin lados($top, $left) {
+  top: $top;
+  left: $left;
+}
+
+.consoles__container {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.texto1 {
+  position: absolute;
+  font-size: map-get($estilos, fuente2);
+  color: map-get($estilos, colorfuente);
+  @include lados(325px, 150px);
+}
+
+.texto2 {
+  position: absolute;
+  font-size: map-get($estilos, fuente2);
+  color: map-get($estilos, colorfuente);
+  @include lados(250px, 520px);
+}
+
+.texto3 {
+  position: absolute;
+  font-size: map-get($estilos, fuente2);
+  color: map-get($estilos, colorfuente);
+  @include lados(400px, 600px);
+}
+
+.texto4 {
+  position: absolute;
+  font-size: map-get($estilos, fuente2);
+  color: map-get($estilos, colorfuente);
+  top: 325px;
+  right: 80px;
+}
