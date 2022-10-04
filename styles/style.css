@@ -102,7 +102,7 @@ h1 {
   width: 1250 vw;
   height: 100 vh;
   padding: 20px;
-  font-size: 35px;
+  font-size: 30px;
 }
 
 .footer ul {
@@ -286,8 +286,16 @@ h2,
   right: 110px;
 }
 
+.texto-super {
+  top: 250px;
+}
+
 .joystickstandar {
   text-align: center;
+}
+
+.joystickk {
+  width: 400px;
 }
 
 .contactofondo {
@@ -379,19 +387,28 @@ h2,
     align-items: center;
     height: 100vh;
   }
-  /* Nintendo  y Sony*/
-  .consoles img {
-    margin-top: 10px;
-    width: 100%;
-    height: 350px;
-  }
-  .productos {
+  /* Retro /*/
+  .consoles__container {
     flex-direction: column;
-    align-items: center;
-    gap: 50px;
   }
-  .contact {
-    width: 100%;
+  .texto-ps1 {
+    top: 1200px;
+    right: 100px;
+  }
+  .joystickstandar {
+    width: 400px;
+  }
+  /* Gaming */
+  .texto2 {
+    top: 725px;
+    right: 60px;
+  }
+  .texto3 {
+    top: 750px;
+    right: 60px;
+  }
+  .texto4 {
+    top: 1200px;
   }
 }
 
