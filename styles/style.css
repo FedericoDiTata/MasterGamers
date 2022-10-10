@@ -328,18 +328,18 @@ h2,
   header {
     flex-direction: column;
     align-items: center;
-    width: 540px;
+    width: 576px;
   }
   ul li a {
     font-size: 15px;
   }
   h2 {
-    width: 98%;
+    width: 100%;
     font-size: 25px;
   }
   .footer {
-    width: 91%;
-    font-size: 15px;
+    width: 100%;
+    font-size: 11px;
     justify-content: center;
   }
   p {
@@ -370,6 +370,9 @@ h2,
   }
   .texto4 {
     top: 1600px;
+  }
+  .row {
+    align-items: center;
   }
   .gameoftheweek {
     background-image: url(./Img/gameoftheweekmobile.webp);
