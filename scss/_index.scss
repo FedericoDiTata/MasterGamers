@@ -76,18 +76,13 @@ h2,
   }
 }
 
-.sellortrade {
-  width: 100%;
-  height: 500px;
-}
-
 .gameoftheweek {
   background-image: url("./Img/gameoftheweek.png");
   background-repeat: no-repeat;
   background: linear-gradient(to bottom, rgb(0 0 0 / 0.4), rgb(0 0 0 / 0.4)),
     url(../Img/gameoftheweek.png);
   background-size: cover;
-  width: 100%;
+  background-position: center;
   height: 450px;
   background-attachment: scroll;
   background-attachment: fixed;
@@ -113,8 +108,9 @@ h2,
 .btn-propio {
   background-color: palevioletred;
   color: map-get($estilos, colorfuente);
-  .btn-propio:hover {
-    background-color: white;
+  &:hover {
+    background-color: white !important;
+    color: black;
   }
 }
 

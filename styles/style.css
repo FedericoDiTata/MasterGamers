@@ -176,17 +176,12 @@ h2,
   color: white;
 }
 
-.sellortrade {
-  width: 100%;
-  height: 500px;
-}
-
 .gameoftheweek {
   background-image: url("./Img/gameoftheweek.png");
   background-repeat: no-repeat;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../Img/gameoftheweek.png);
   background-size: cover;
-  width: 100%;
+  background-position: center;
   height: 450px;
   background-attachment: scroll;
   background-attachment: fixed;
@@ -208,8 +203,9 @@ h2,
   background-color: palevioletred;
   color: white;
 }
-.btn-propio .btn-propio:hover {
-  background-color: white;
+.btn-propio:hover {
+  background-color: white !important;
+  color: black;
 }
 
 .texto {
@@ -340,14 +336,25 @@ h2,
   .footer {
     width: 100%;
     font-size: 11px;
-    justify-content: center;
   }
   p {
     font-size: 10px;
   }
   /* index */
+  .gameoftheweek {
+    background-size: contain;
+    height: 200px;
+  }
   .banner_container img {
     width: 97%;
+  }
+  .container {
+    justify-content: center;
+    align-items: center;
+  }
+  .row {
+    justify-content: center;
+    align-items: center;
   }
   .centrado {
     font-size: 70px;
@@ -373,9 +380,6 @@ h2,
   }
   .row {
     align-items: center;
-  }
-  .gameoftheweek {
-    background-image: url(./Img/gameoftheweekmobile.webp);
   }
   /* Accesories */
   .productos__headphones,

@@ -23,7 +23,6 @@
   .footer {
     width: 100%;
     font-size: 11px;
-    justify-content: center;
   }
 
   p {
@@ -32,8 +31,23 @@
 
   /* index */
 
+  .gameoftheweek {
+    background-size: contain;
+    height: 200px;
+  }
+
   .banner_container img {
     width: 97%;
+  }
+
+  .container {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .row {
+    justify-content: center;
+    align-items: center;
   }
 
   .centrado {
@@ -66,10 +80,6 @@
 
   .row {
     align-items: center;
-  }
-
-  .gameoftheweek {
-    background-image: url(./Img/gameoftheweekmobile.webp);
   }
 
   /* Accesories */
