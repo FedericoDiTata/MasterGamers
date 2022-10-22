@@ -17,11 +17,21 @@
 
 header {
   background: rgb(63, 80, 212) 0%;
-  background: linear-gradient(90deg, rgb(63, 80, 212) 0%, rgb(226, 0, 255) 100%, rgb(149, 52, 184) 55%);
+  background: linear-gradient(
+    90deg,
+    rgb(63, 80, 212) 0%,
+    rgb(226, 0, 255) 100%,
+    rgb(149, 52, 184) 55%
+  );
   position: sticky;
   top: 0;
   z-index: 100;
-  background-image: linear-gradient(to right, pink, rgb(226, 0, 255) 100%, rgb(149, 52, 184) 55%);
+  background-image: linear-gradient(
+    to right,
+    pink,
+    rgb(226, 0, 255) 100%,
+    rgb(149, 52, 184) 55%
+  );
   background-size: 300% 100%;
   transition: background-position 0.5s ease-in-out;
 }
@@ -98,7 +108,12 @@ h1 {
 }
 
 .footer {
-  background: linear-gradient(90deg, rgb(63, 80, 212) 0%, rgb(226, 0, 255) 100%, rgb(149, 52, 184) 55%);
+  background: linear-gradient(
+    90deg,
+    rgb(63, 80, 212) 0%,
+    rgb(226, 0, 255) 100%,
+    rgb(149, 52, 184) 55%
+  );
   width: 1250 vw;
   height: 100 vh;
   padding: 20px;
@@ -131,11 +146,18 @@ h2,
   background-color: #b4aee8;
   background: rgb(2, 0, 36);
   background: rgb(63, 80, 212);
-  background: linear-gradient(90deg, rgb(63, 80, 212) 0%, rgb(226, 0, 255) 100%, rgb(149, 52, 184) 55%);
+  background: linear-gradient(
+    90deg,
+    rgb(63, 80, 212) 0%,
+    rgb(226, 0, 255) 100%,
+    rgb(149, 52, 184) 55%
+  );
   color: white;
 }
 
-.flex, .sell__container div, .sell__container {
+.flex,
+.sell__container div,
+.sell__container {
   display: flex;
   justify-content: center;
 }
@@ -179,7 +201,8 @@ h2,
 .gameoftheweek {
   background-image: url("./Img/gameoftheweek.png");
   background-repeat: no-repeat;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../Img/gameoftheweek.png);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../Img/gameoftheweek.png);
   background-size: cover;
   background-position: center;
   height: 450px;
@@ -191,7 +214,12 @@ h2,
 }
 
 .bg-card {
-  background: linear-gradient(90deg, rgb(63, 80, 212) 0%, rgb(226, 0, 255) 100%, rgb(149, 52, 184) 55%);
+  background: #5a1e7f;
+  transition: all 0.5s ease-in-out;
+}
+
+.bg-card:hover {
+  background: rgb(2, 0, 36);
 }
 
 .texto-card {
@@ -219,11 +247,40 @@ h2,
 }
 
 .texto1 {
-  position: absolute;
-  font-size: 110px;
+  font-size: 50px;
   color: white;
-  top: 325px;
-  left: 150px;
+  text-align: center;
+}
+
+.texto11 {
+  font-size: 25px;
+  color: white;
+  text-align: center;
+}
+
+.tarjetaa {
+  border: 1px solid white;
+  transition: all 0.5s ease-in-out;
+}
+
+.tarjeta-contenedor {
+  transition: all 1s ease-in-out;
+}
+
+.tarjeta-contenedor:hover .animacion {
+  filter: saturate(150%);
+}
+
+.tarjeta-contenedor:hover .tarjetaa {
+  background-color: pink;
+}
+
+.tarjeta-contenedor:hover p {
+  color: #39375b;
+}
+
+.animacion {
+  transition: all 0.5s ease-in-out;
 }
 
 .texto2 {
@@ -250,48 +307,10 @@ h2,
   right: 80px;
 }
 
-.texto-sega {
-  position: absolute;
-  font-size: 110px;
-  color: white;
-  top: 300px;
-  left: 135px;
-}
-
-.texto-super {
-  position: absolute;
-  font-size: 110px;
-  color: white;
-  top: 240px;
-  left: 660px;
-}
-
-.texto-nintendo {
-  position: absolute;
-  font-size: 110px;
-  color: white;
-  top: 370px;
-  left: 570px;
-}
-
-.texto-ps1 {
-  position: absolute;
-  font-size: 110px;
-  color: white;
-  top: 325px;
-  right: 110px;
-}
-
-.texto-super {
-  top: 250px;
-}
-
-.joystickstandar {
+.texto-consolas {
   text-align: center;
-}
-
-.joystickk {
-  width: 400px;
+  font-size: 80px;
+  color: white;
 }
 
 .contactofondo {
@@ -306,7 +325,12 @@ h2,
 .contact__section {
   background: rgb(2, 0, 36);
   background: rgb(63, 80, 212);
-  background: linear-gradient(90deg, rgb(63, 80, 212) 0%, rgb(226, 0, 255) 100%, rgb(149, 52, 184) 55%);
+  background: linear-gradient(
+    90deg,
+    rgb(63, 80, 212) 0%,
+    rgb(226, 0, 255) 100%,
+    rgb(149, 52, 184) 55%
+  );
   width: 50%;
   margin: 20px;
   padding: 20px;
@@ -359,63 +383,27 @@ h2,
   .centrado {
     font-size: 70px;
   }
-  .texto1,
-.texto2,
-.texto3,
-.texto4 {
-    font-size: 80px;
-  }
   .texto1 {
-    top: 400px;
+    font-size: 25px;
   }
-  .texto2 {
-    top: 835px;
-    left: 200px;
+
+  .texto11 {
+    font-size: 20px;
   }
-  .texto3 {
-    top: 1200px;
+
+  .texto-consolas {
+    text-align: center;
+    font-size: 25px;
+    color: white;
   }
-  .texto4 {
-    top: 1600px;
-  }
+
   .row {
     align-items: center;
   }
-  /* Accesories */
-  .productos__headphones,
-.productos__mouse {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-  }
-  .contenedor {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
+
   /* Retro /*/
   .consoles__container {
     flex-direction: column;
-  }
-  .texto-ps1 {
-    top: 1200px;
-    right: 100px;
-  }
-  .joystickstandar {
-    width: 400px;
-  }
-  /* Gaming */
-  .texto2 {
-    top: 725px;
-    right: 60px;
-  }
-  .texto3 {
-    top: 750px;
-    right: 60px;
-  }
-  .texto4 {
-    top: 1200px;
   }
 }
 
