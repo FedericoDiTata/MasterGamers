@@ -283,30 +283,6 @@ h2,
   transition: all 0.5s ease-in-out;
 }
 
-.texto2 {
-  position: absolute;
-  font-size: 110px;
-  color: white;
-  top: 250px;
-  left: 520px;
-}
-
-.texto3 {
-  position: absolute;
-  font-size: 110px;
-  color: white;
-  top: 400px;
-  left: 600px;
-}
-
-.texto4 {
-  position: absolute;
-  font-size: 110px;
-  color: white;
-  top: 325px;
-  right: 80px;
-}
-
 .texto-consolas {
   text-align: center;
   font-size: 80px;
@@ -389,6 +365,32 @@ h2,
 
   .texto11 {
     font-size: 20px;
+  }
+
+  .texto-consolas {
+    text-align: center;
+    font-size: 25px;
+    color: white;
+  }
+
+  .row {
+    align-items: center;
+  }
+
+  /* Retro /*/
+  .consoles__container {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .footer {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  .centrado {
+    font-size: 55px;
   }
 
   .texto-consolas {
